@@ -3,3 +3,63 @@
 --------------------------------------------------------------*/
 
 /* Front page */
+
+.journal-boxes {
+    display: flex;
+    justify-content: space-around;
+
+};
+
+.journal-boxes p {
+    height: 300px;
+    width: 150px;
+    background-color: red;
+};
+
+.shop-stuff-boxes {
+    display: flex;
+    justify-content: space-around;
+
+ };
+
+ .shop-stuff-boxes p {
+    height: 300px;
+    width: 150px;
+    background-color: red;
+
+ };
+
+//  .widget-area {
+//      display: none;
+//  };
+
+ /*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
+
+.entry-header, img {
+    position: relative;
+    max-width: 750px;
+};
+
+.entry-title {
+	position: absolute;
+	top: 20px;
+	left: 20;
+	background-color: green;
+    color: white;
+}
+
+.entry-meta {
+    position: absolute;
+    right: 115px;
+    bottom: 8px;
+    background-color: green;
+    color: white;
+}
+
+.entry-content {
+    max-width: 750px;
+};
+
+// .site-content {
+//     margin: 0;
+// };

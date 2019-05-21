@@ -1,0 +1,40 @@
+
+
+.business-hours {
+    text-transform: uppercase;
+    color: #d99054;
+};
+
+.day-of-week {
+    font-weight: 700;
+};
+
+.footer {
+    background-image: url(../../images/dark-wood.png);
+    background-repeat: repeat;
+    height: 250px;
+};
+
+.footer-info1, .footer-info2{
+    color:white;
+    flex: 1;
+};
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right:10px;
+};
+
+.logo-right {
+    display:flex;
+    flex: 1;
+    justify-content: flex-end;
+    padding-right: 10px;
+};
+
+.logo-size {
+    width: 200px;
+};

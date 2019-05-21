@@ -26,17 +26,26 @@ a {
 
 /* Menus */
 
+.site-header {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	// display: flex;
+	// float: left;
 	width: 100%;
+	background-color: transparent;
+
+}
+
 
 	ul {
 		display: none;
 		list-style: none;
 		margin: 0;
-		padding-left: 0;
+		padding-left: 10;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -79,6 +88,8 @@ a {
 	li {
 		float: left;
 		position: relative;
+		padding-left: 10px;
+		padding-right: 10px;
 
 		&:hover > a,
 		&.focus > a {
@@ -93,7 +104,7 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
-}
+
 
 /* Small menu. */
 .menu-toggle,

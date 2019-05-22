@@ -9,7 +9,7 @@
 	.site-content {
 		max-width: 100vw;
 		display: flex;
-		justify-content: center;
+		// justify-content: center;
 		align-items: flex-start;
 		margin-left: 50px;
 
@@ -66,5 +66,18 @@
 	display: block;
 }
 
+.journals-container {
+	display: flex;
+	justify-content: space-around;
+};
 
+.journals-container ul {
+	list-style: none;
+
+	
+};
+
+.journal-thumbnail img {
+	width: 400px;
+};
 

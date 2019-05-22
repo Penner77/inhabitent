@@ -41,3 +41,14 @@ function inhabitent_the_url( $url ) {
     return get_bloginfo( 'url' );
 }
 add_filter( 'login_headerurl', 'inhabitent_the_url' );
+
+
+//below code adds a body class for each single page 
+function inhabitent_body_class_for_pages( $classes ) {
+    if ( is_singular( 'page' ) ) {
+        global $post;
+        $classes[] = 'page-' . $post->post_name;
+    }
+    return $classes;
+}
+add_filter( 'body_class', 'inhabitent_body_class_for_pages' );

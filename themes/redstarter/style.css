@@ -493,7 +493,8 @@ a {
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  width: 100%; }
 
 .main-navigation {
   clear: both;
@@ -501,7 +502,6 @@ a {
   background-color: transparent; }
 
 ul {
-  display: none;
   list-style: none;
   margin: 0;
   padding-left: 10; }
@@ -673,9 +673,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -720,6 +717,19 @@ a {
 
 .bypostauthor {
   display: block; }
+
+.journals-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.journals-container ul {
+  list-style: none; }
+
+.journal-thumbnail img {
+  width: 400px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -785,17 +795,11 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.journal-boxes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.journal-boxes p {
-  height: 300px;
-  width: 150px;
-  background-color: red; }
+.home-hero {
+  background-image: url(../../images/home-hero.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh; }
 
 .shop-stuff-boxes {
   display: -webkit-box;
@@ -804,15 +808,24 @@ object {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+header, .entry-header {
+  width: 750px;
+  position: relative; }
+
 .shop-stuff-boxes p {
   height: 300px;
   width: 150px;
   background-color: red; }
 
 /*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
-.entry-header, img {
+.hfeed-site, img, .post-type-post {
   position: relative;
-  max-width: 750px; }
+  width: 750px; }
+
+.about-entry-title {
+  position: absolute;
+  background-color: none;
+  color: white; }
 
 .entry-title {
   position: absolute;
@@ -830,6 +843,19 @@ object {
 
 .entry-content {
   max-width: 750px; }
+
+.about-entry-content {
+  width: 100%;
+  height: 100vh; }
+
+.page-id-5 .site-content {
+  width: 100%;
+  background-color: yellow;
+  margin: 0; }
+  .page-id-5 .site-content .hero-image-header {
+    width: 100%;
+    height: 100vh;
+    position: relative; }
 
 .business-hours {
   text-transform: uppercase;

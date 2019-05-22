@@ -10,7 +10,7 @@ get_header(); ?>
 	<div id="primary" class="content-area">
     <div class="home-hero">
 
-    <img src="http://localhost:8888/inhabitent/wp-content/uploads/2019/05/home-hero-2.jpg">
+    <img class="logo-full" src="./images/inhabitent-logo-full.svg">
         <main id="main" class="site-main" role="main">
             
             </div>
@@ -25,12 +25,38 @@ get_header(); ?>
                     </div>    
                 </div>
 
-                <div class="main-page-journal">
+                <div class="front-page-journal">
                         <h2>Inhabitent Journal</h2>
-                        <div class="journal-boxes">
-                            <p></p>
-                            <p></p>
-                            <p></p>
+                        <div class="journals-container">
+    
+                    <?php
+
+                $args = array( 'post_type' => 'post', 'order' => 'ASC', 'posts_per_page' => 3);
+                                // can maybe get rid of ORDER above
+                $journal_posts = get_posts( $args ); 
+                ?>
+                        <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
+                                <ul>
+                                    <li>
+                                        <!-- THUMBNAIL - in the pic on my phone, choose between the_post and/or get_the_post -->
+                                    <div class="journal-thumbnail">
+                                        <?php the_post_thumbnail('large');?>
+                                    </div>
+                                        <!-- META DATA -->
+                                    <div class="journal-meta">
+                                        <?php echo get_the_date();?> / 
+                                        <?php echo get_comments_number(); ?> Comments
+                                    </div> 
+                                        <!-- TITLE -->
+                                    <div class="journal-title">
+                                        <!-- put html and permalink here -->
+                                        <h2><?php the_title(); ?></h2>
+                                    </div>
+                               
+                                </ul>
+                            <?php endforeach; wp_reset_postdata(); 
+                        ?>
+
                         </div>
                 </div>
 
@@ -48,5 +74,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

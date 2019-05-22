@@ -4,22 +4,22 @@
 
 /* Front page */
 
-.journal-boxes {
-    display: flex;
-    justify-content: space-around;
-
-};
-
-.journal-boxes p {
-    height: 300px;
-    width: 150px;
-    background-color: red;
+.home-hero {
+    background-image: url(../../images/home-hero.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
 };
 
 .shop-stuff-boxes {
     display: flex;
     justify-content: space-around;
 
+ };
+
+ header, .entry-header {
+     width: 750px;
+     position: relative;
  };
 
  .shop-stuff-boxes p {
@@ -35,9 +35,15 @@
 
  /*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
 
-.entry-header, img {
+.hfeed-site, img, .post-type-post {
     position: relative;
-    max-width: 750px;
+    width: 750px;  
+};
+
+.about-entry-title {
+    position: absolute;
+    background-color: none;
+    color: white;
 };
 
 .entry-title {
@@ -63,3 +69,20 @@
 // .site-content {
 //     margin: 0;
 // };
+
+.about-entry-content {
+    width: 100%;
+    height: 100vh;
+};
+
+.page-id-5 {
+    .site-content{ width: 100%;
+        background-color: yellow;
+        margin: 0;
+        .hero-image-header {
+            width: 100%;
+            height: 100vh;
+            position: relative;
+        }
+    }
+};

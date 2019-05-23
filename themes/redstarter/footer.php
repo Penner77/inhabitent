@@ -7,7 +7,7 @@
 
 ?>
 
-			</div><!-- #content -->
+</div><!-- #content -->
 
 	<div class="footer">
 			<div class="footer-container">

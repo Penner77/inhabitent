@@ -28,18 +28,12 @@ a {
 
 .site-header {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
 	width: 100%;
+	position: absolute;
 }
 
-.main-navigation {
-	clear: both;
-	// display: flex;
-	// float: left;
-	width: 100%;
-	background-color: transparent;
 
-}
 
 
 	ul {
@@ -142,3 +136,4 @@ a {
 		width: 50%;
 	}
 }
+

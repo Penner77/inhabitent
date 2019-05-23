@@ -7,23 +7,44 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
     <div class="home-hero">
+        <img class="logo-full" src="./images/inhabitent-logo-full.svg">
+        <main id="main" class="site-main" role="main">        
+    </div>
+</div>
+                 <!-- start of SHOP STUFF -->
+    <div class="shop-stuff-container">
+            <h2>Shop Stuff</h2>
 
-    <img class="logo-full" src="./images/inhabitent-logo-full.svg">
-        <main id="main" class="site-main" role="main">
-            
-            </div>
+                <div class="shop-stuff-blocks">
+                    <?php $terms = get_terms( 
+                        array( 'taxonomy' => 'product-type', 
+                        'hide_empty' => 0));?>
 
-                <div class="shop-stuff">
-                    <h2>Shop Stuff</h2>
-                    <div class="shop-stuff-boxes">
-                        <p class="do-stuff">Get back to nature with all the tools and toys you need to enjoy the great outdoors.</p>
-                        <p class="eat-stuff">Nothing beats food cooked over a fire. We have all you need for good camping eats.</p>
-                        <p class="sleep-stuff">Get a good night's rest in the wild in a home away from home that travels well.</p>
-                        <p class="wear-stuff">From flannel shirts to toques, look the part while roughing it in the great outdoors.</p>
-                    </div>    
-                </div>
+                            <!-- <div class="product-blocks-terms"> -->
+                                <?php
+                                foreach( $terms as $term ):?>
+                            
+                                <div class="product-block-term">
+                                    <img class="block-img" src="<?php echo get_template_directory_uri() . 
+                                    '/images/product-type-icons/' .
+                                        $term->slug .
+                                        '.svg' ?>"/>
+                                        <p><?php echo $term->description; ?></p>
+                                        <p class="stuff-button">
+                                        <a href="<?php echo get_term_link( $term ); ?>">
+                                        <?php echo $term->name; ?> Stuff
+                                        </a>
+                                        </p>
+                                </div>
+                        <?php endforeach; ?>
+                    </div> 
+                    <!-- end of .product_terms -->
+                    </div>
+                </div> 
+        </div>           
+                <!-- div end of SHOP STUFF -->
 
                 <div class="front-page-journal">
                         <h2>Inhabitent Journal</h2>
@@ -72,7 +93,7 @@ get_header(); ?>
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
+	<!-- </div>#primary -->
 
 
 <?php get_footer(); ?>

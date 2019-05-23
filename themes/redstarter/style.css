@@ -491,15 +491,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  width: 100%; }
-
-.main-navigation {
-  clear: both;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 100%;
-  background-color: transparent; }
+  position: absolute; }
 
 ul {
   list-style: none;
@@ -670,13 +665,9 @@ a {
 @media only screen and (min-width: 600px) {
   .site-content {
     max-width: 100vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-align: start;
         -ms-flex-align: start;
-            align-items: flex-start;
-    margin-left: 50px; }
+            align-items: flex-start; }
     .site-content .contact-area {
       padding: 3rem;
       -ms-flex-preferred-size: 70%;
@@ -718,6 +709,9 @@ a {
 .bypostauthor {
   display: block; }
 
+.front-page-journal h2 {
+  text-align: center; }
+
 .journals-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,6 +724,9 @@ a {
 
 .journal-thumbnail img {
   width: 400px; }
+
+.banner-tent {
+  width: 75px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -797,28 +794,65 @@ object {
 /* Front page */
 .home-hero {
   background-image: url(../../images/home-hero.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100vh; }
 
-.shop-stuff-boxes {
+header, .entry-header {
+  width: 750px;
+  position: relative; }
+
+.shop-stuff-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  text-align: center; }
+
+.shop-stuff-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px; }
+
+.product-block-term {
+  border: 1px solid #e1e1e1;
+  border-top: 5px solid #e1e1e1;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 24%;
+          flex: 0 1 24%;
+  max-width: 24%;
+  padding: .75rem; }
+
+.block-img {
+  height: 70px;
+  widows: 70px; }
+
+.front-page-journal h2 {
+  text-align: center; }
+
+.journals-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-header, .entry-header {
-  width: 750px;
-  position: relative; }
+.journals-container ul {
+  list-style: none; }
 
-.shop-stuff-boxes p {
-  height: 300px;
-  width: 150px;
-  background-color: red; }
+.journal-thumbnail img {
+  width: 400px; }
+
+.banner-tent {
+  width: 75px; }
 
 /*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
-.hfeed-site, img, .post-type-post {
+img .post-type-post {
   position: relative;
   width: 750px; }
 

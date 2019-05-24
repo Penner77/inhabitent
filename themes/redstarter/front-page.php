@@ -8,10 +8,12 @@
 get_header(); ?>
 
 <div id="primary" class="content-area">
+<main id="main" class="site-main" role="main"> 
     <div class="home-hero">
-        <img class="logo-full" src="./images/inhabitent-logo-full.svg">
-        <main id="main" class="site-main" role="main">        
-    </div>
+        <div class=“logo-full”> 
+    <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg'?>"></a>
+    </div>  
+        </div>
 </div>
                  <!-- start of SHOP STUFF -->
     <div class="shop-stuff-container">
@@ -46,6 +48,7 @@ get_header(); ?>
         </div>           
                 <!-- div end of SHOP STUFF -->
 
+                
                 <div class="front-page-journal">
                         <h2>Inhabitent Journal</h2>
                         <div class="journals-container">
@@ -83,7 +86,8 @@ get_header(); ?>
 
                 <div class="latest-adventures">
                     <h2>Latest Adventures</h2>
-                    <p></p>
+                    <div class="adventure-grid">
+                    </div>
                 </div>
 
 			<?php while ( have_posts() ) : the_post(); ?>

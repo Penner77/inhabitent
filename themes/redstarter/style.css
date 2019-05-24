@@ -476,26 +476,15 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
-  a:visited {
-    color: purple; }
+  color: #248A83; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #206d68; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
     outline: 0; }
 
 /* Menus */
-.site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
-  position: absolute; }
-
 ul {
   list-style: none;
   margin: 0;
@@ -651,9 +640,6 @@ a {
   .widget-area p {
     margin-bottom: 0.5rem; }
 
-.widget-title {
-  display: none; }
-
 .widget-area {
   -ms-flex-preferred-size: 110%;
       flex-basis: 110%; }
@@ -662,19 +648,6 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
-@media only screen and (min-width: 600px) {
-  .site-content {
-    max-width: 100vw;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start; }
-    .site-content .contact-area {
-      padding: 3rem;
-      -ms-flex-preferred-size: 70%;
-          flex-basis: 70%;
-      height: 100%;
-      border-right: 1px solid #e1e1e1; } }
-
 .sticky {
   display: block; }
 
@@ -708,25 +681,6 @@ a {
 
 .bypostauthor {
   display: block; }
-
-.front-page-journal h2 {
-  text-align: center; }
-
-.journals-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
-
-.journals-container ul {
-  list-style: none; }
-
-.journal-thumbnail img {
-  width: 400px; }
-
-.banner-tent {
-  width: 75px; }
 
 /*--------------------------------------------------------------
 # Media
@@ -791,24 +745,45 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
-.home-hero {
+.home .site-content {
+  display: block; }
+
+.home .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  position: absolute; }
+
+.home .home-hero {
   background-image: url(../../images/home-hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh; }
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
-header, .entry-header {
-  width: 750px;
-  position: relative; }
+.home .menu-main-menu-container {
+  padding-left: 200px; }
 
-.shop-stuff-container {
+.home .shop-stuff-container {
   margin-left: auto;
   margin-right: auto;
   width: 1120px;
   text-align: center; }
 
-.shop-stuff-blocks {
+.home .shop-stuff-blocks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -819,7 +794,7 @@ header, .entry-header {
   padding-left: 50px;
   padding-right: 50px; }
 
-.product-block-term {
+.home .product-block-term {
   border: 1px solid #e1e1e1;
   border-top: 5px solid #e1e1e1;
   -webkit-box-flex: 0;
@@ -828,28 +803,55 @@ header, .entry-header {
   max-width: 24%;
   padding: .75rem; }
 
-.block-img {
+.home .block-img {
   height: 70px;
   widows: 70px; }
 
-.front-page-journal h2 {
+.home .front-page-journal h2 {
   text-align: center; }
 
-.journals-container {
+.home .journals-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.journals-container ul {
+.home .journals-container ul {
   list-style: none; }
 
-.journal-thumbnail img {
+.home .journal-thumbnail img {
   width: 400px; }
 
-.banner-tent {
+.home .banner-tent {
   width: 75px; }
+
+.blog .content-area p, .single-post .content-area p {
+  max-width: 750px; }
+
+.blog img, .single-post img {
+  width: 100%; }
+
+.blog .site-header, .single-post .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%; }
+
+.blog .blog, .blog .entry-header, .single-post .blog, .single-post .entry-header {
+  width: 750px;
+  position: relative; }
+
+.blog .site-content, .single-post .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
 
 /*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
 img .post-type-post {
@@ -864,32 +866,44 @@ img .post-type-post {
 .entry-title {
   position: absolute;
   top: 20px;
-  left: 20;
+  left: 20; }
+
+.entry-header, .entry-title {
   background-color: green;
+  color: white; }
+
+.menu .menu-item {
   color: white; }
 
 .entry-meta {
   position: absolute;
-  right: 115px;
-  bottom: 8px;
+  right: 0;
+  bottom: 0;
   background-color: green;
   color: white; }
 
-.entry-content {
+.entry-content p {
   max-width: 750px; }
 
 .about-entry-content {
   width: 100%;
   height: 100vh; }
 
-.page-id-5 .site-content {
-  width: 100%;
-  background-color: yellow;
-  margin: 0; }
-  .page-id-5 .site-content .hero-image-header {
-    width: 100%;
-    height: 100vh;
-    position: relative; }
+.page-find-us .hfeed-site {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-find-us .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.page-find-us .content-area {
+  width: 175%; }
+
+.page-find-us .widget-area {
+  width: 25%; }
 
 .business-hours {
   text-transform: uppercase;

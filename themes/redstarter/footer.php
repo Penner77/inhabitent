@@ -26,7 +26,8 @@
 				</div>
 
 				<div class="logo-right">
-					<p class="logo-size"><img src="wp-content/themes/redstarter/images/logos/inhabitent-logo-text.svg"></p>
+				<img class=“logo-size” src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg'?>"></a>
+					<!-- <p class="logo-size"><img src="wp-content/themes/redstarter/images/logos/inhabitent-logo-text.svg"></p> -->
 				</div>
 
 			</div>

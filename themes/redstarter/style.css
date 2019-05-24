@@ -648,6 +648,11 @@ a {
 # Content
 --------------------------------------------------------------*/
 /* Posts and pages */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 0.5px dashed #1d1818; }
+
 .sticky {
   display: block; }
 
@@ -664,7 +669,8 @@ a {
 .page-content,
 .entry-content,
 .entry-summary {
-  margin: 1.5rem 0 0; }
+  margin: 1.5rem 0 0;
+  padding-left: 50px; }
 
 .page-links {
   clear: both;
@@ -745,6 +751,12 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.home .entry-title {
+  display: none; }
+
+.home .site-branding {
+  width: 250px; }
+
 .home .site-content {
   display: block; }
 
@@ -756,6 +768,9 @@ object {
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   position: absolute; }
 
@@ -811,83 +826,53 @@ object {
   text-align: center; }
 
 .home .journals-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  margin-left: auto;
+  margin-right: auto;
+  width: 1120px;
+  text-align: center; }
 
-.home .journals-container ul {
-  list-style: none; }
+.home .journals-container li {
+  list-style: none;
+  width: 350px; }
 
-.home .journal-thumbnail img {
-  width: 400px; }
-
-.home .banner-tent {
-  width: 75px; }
-
-.blog .content-area p, .single-post .content-area p {
-  max-width: 750px; }
-
-.blog img, .single-post img {
-  width: 100%; }
-
-.blog .site-header, .single-post .site-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%; }
-
-.blog .blog, .blog .entry-header, .single-post .blog, .single-post .entry-header {
-  width: 750px;
-  position: relative; }
-
-.blog .site-content, .single-post .site-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap; }
-
-/*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
-img .post-type-post {
-  position: relative;
-  width: 750px; }
-
-.about-entry-title {
-  position: absolute;
-  background-color: none;
-  color: white; }
-
-.entry-title {
-  position: absolute;
-  top: 20px;
-  left: 20; }
-
-.entry-header, .entry-title {
-  background-color: green;
-  color: white; }
-
-.menu .menu-item {
-  color: white; }
-
-.entry-meta {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  background-color: green;
-  color: white; }
-
-.entry-content p {
-  max-width: 750px; }
-
-.about-entry-content {
+.home .journal-thumbnail {
   width: 100%;
-  height: 100vh; }
+  max-height: 200px; }
+
+.home .adventure-grid-ul {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 2fr;
+  grid-gap: 20px 20px;
+  height: 30vw;
+  padding: 0;
+  margin: 0; }
+
+.home .canoe {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+  background-size: cover; }
+
+.home .beach {
+  grid-column: 3 / span 2;
+  grid-row: 1 / span 1;
+  background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+  background-size: cover; }
+
+.home .mountain {
+  background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+  background-size: cover; }
+
+.home .sky {
+  background-image: url(../../images/adventure-photos/night-sky.jpg);
+  background-size: cover; }
+
+.home .adventure-grid-ul li h3 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: Merriweather Web,serif; }
 
 .page-find-us .hfeed-site {
   display: -webkit-box;
@@ -904,6 +889,23 @@ img .post-type-post {
 
 .page-find-us .widget-area {
   width: 25%; }
+
+.page-id-9 .entry-title {
+  display: none; }
+
+.page-id-9 .site-content {
+  position: relative; }
+
+page-id-9, .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  max-height: 50px; }
 
 .business-hours {
   text-transform: uppercase;
@@ -951,3 +953,112 @@ img .post-type-post {
 
 .logo-size {
   width: 200px; }
+
+/*--------------------------------------------------------------
+# Journal / Home 
+--------------------------------------------------------------*/
+.blog .content-area p, .single-post .content-area p {
+  max-width: 750px; }
+
+.blog img, .single-post img {
+  width: 100%; }
+
+.blog .site-header, .single-post .site-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 50px; }
+
+.blog .entry-header, .single-post .entry-header {
+  width: 750px;
+  position: relative; }
+
+.blog .site-content, .single-post .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.entry-title {
+  position: absolute;
+  top: 20px;
+  left: 20;
+  font-size: 2rem; }
+
+/*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
+img .post-type-post {
+  position: relative;
+  width: 750px; }
+
+.about-entry-title {
+  position: absolute;
+  background-color: none;
+  color: white; }
+
+.entry-title {
+  position: absolute;
+  top: 20px;
+  left: 20;
+  font-family: "Novecento Sans Web, sans-serif"; }
+
+.entry-header, .entry-title {
+  background-color: green;
+  color: white; }
+
+.menu .menu-item {
+  color: white; }
+
+.entry-meta {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: green;
+  color: white;
+  font-size: 1rem;
+  font-family: "Novecento Sans Web, sans-serif"; }
+
+.entry-content p {
+  max-width: 750px; }
+
+.about-entry-content {
+  width: 100%;
+  height: 100vh; }
+
+/*--------------------------------------------------------------
+# Front Page
+--------------------------------------------------------------*/
+.site-header .banner-tent, .site-header img, .site-branding .banner-tent, .site-branding img {
+  width: 65px;
+  position: fixed; }
+
+/*--------------------------------------------------------------
+# Find Us
+--------------------------------------------------------------*/
+.hero-image-header {
+  height: 100vh; }
+
+.page-about .entry-title {
+  display: none; }
+
+.page-about .about-entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page-about h1.about-entry-title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }

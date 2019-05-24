@@ -1,0 +1,21 @@
+
+
+.hero-image-header {
+    height: 100vh;
+}
+
+.page-about {
+    .entry-title {
+        display: none;       
+    }
+
+    .about-entry-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h1.about-entry-title {
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -59,8 +59,9 @@ get_header(); ?>
                                 // can maybe get rid of ORDER above
                 $journal_posts = get_posts( $args ); 
                 ?>
+                <ul>
                         <?php foreach ( $journal_posts as $post ) : setup_postdata( $post ); ?>
-                                <ul>
+                                
                                     <li>
                                         <!-- THUMBNAIL - in the pic on my phone, choose between the_post and/or get_the_post -->
                                     <div class="journal-thumbnail">
@@ -73,13 +74,15 @@ get_header(); ?>
                                     </div> 
                                         <!-- TITLE -->
                                     <div class="journal-title">
-                                        <!-- put html and permalink here -->
+                                    <a href="<?php get_the_permalink(); ?> ">
                                         <h2><?php the_title(); ?></h2>
+                                        <a class=“read-more-button” href=“<?php echo get_the_permalink(); ?>“>Read Entry</a>
                                     </div>
-                               
-                                </ul>
+                                    </li>
+                                
                             <?php endforeach; wp_reset_postdata(); 
                         ?>
+                        </ul>
 
                         </div>
                 </div>
@@ -87,6 +90,12 @@ get_header(); ?>
                 <div class="latest-adventures">
                     <h2>Latest Adventures</h2>
                     <div class="adventure-grid">
+                    <ul class="adventure-grid-ul">
+                        <li class="canoe"><h3>Getting Back to Nature in a Canoe</h3></li>
+                        <li class="beach"><h3>A Night with Friends at the Beach</h3></li>
+                        <li class="mountain"><h3>Taking in the View at Big Mountain</h3></li>
+                        <li class="sky"><h3>Star-Gazing at the Night Sky</h3></li>
+                    </ul>
                     </div>
                 </div>
 

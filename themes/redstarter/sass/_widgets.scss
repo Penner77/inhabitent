@@ -42,4 +42,7 @@
 
     .widget-area {
       flex-basis: 110%;
+      display: flex;
+    flex-direction: column;
+    align-items: center;
     };

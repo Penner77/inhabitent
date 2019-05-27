@@ -1,21 +1,27 @@
-
-
 .hero-image-header {
-    height: 100vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-about {
-    .entry-title {
-        display: none;       
-    }
+  .entry-title {
+    position: unset;
+    color: white;
+  }
 
-    .about-entry-content {
-        display: flex;
-        flex-direction: column;
-    }
+  .about-entry-content {
+    display: flex;
+    flex-direction: column;
+  }
 
-    h1.about-entry-title {
-        justify-content: center;
-        align-items: center;
-    }
+  h1.about-entry-title {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .site-header {
+    position: absolute;
+  }
 }

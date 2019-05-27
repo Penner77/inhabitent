@@ -26,7 +26,6 @@
 					<a href="<?php echo get_home_url(); ?>">
 					<img class=“banner-tent” src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'?>"></a>
 
-						<!-- <img class="banner-tent" src="wp-content/themes/redstarter/images/logos/inhabitent-logo-tent-white.svg"> -->
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 						<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 					</div><!-- .site-branding -->

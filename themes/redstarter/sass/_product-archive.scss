@@ -1,0 +1,63 @@
+// 16 item page SHOP:
+
+.post-type-archive,
+.post-type-archive-product {
+  .product-top-menu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+  }
+
+  .page-header {
+    justify-content: center;
+  }
+
+  .page-header a {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .page-header h2 {
+    text-align: center;
+  }
+
+  .product-archive-container {
+    display: grid;
+    width: 1200px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 300px);
+    margin: 0 auto;
+  }
+
+  .product-grid-items {
+    display: flex;
+    height: auto;
+    width: 300px;
+  }
+
+  .product-grid-item-name {
+    display: flex;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .entry-header {
+    display: grid;
+  }
+
+  .entry-title {
+    position: relative;
+    font-size: 1rem;
+  }
+
+  .thumbnail-post-link {
+    display: flex;
+    overflow: hidden;
+    max-height: 250px;
+  }
+
+  .site-content {
+    padding-bottom: 50px;
+  }
+}

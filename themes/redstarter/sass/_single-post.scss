@@ -1,15 +1,27 @@
 .single-post {
-  //   color: #404040;
-  //   font-family: Merriweather Web, serif;
-  //   font-size: 16px;
-  //   font-size: 1rem;
-  //   line-height: 1.75;
-  //   .single-format-standard
-  background: red;
+  img .post-type-post {
+    position: relative;
+    width: 750px;
+  }
 
   .entry-title {
     position: absolute;
     background: #248a83 !important;
+    color: white;
+  }
+
+  .entry-meta {
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    background-color: #248a83;
+    color: white;
+    font-size: 1rem;
+    font-family: Novecento Bold Sans Web, sans-serif;
+  }
+
+  .comments-link a {
     color: white;
   }
 }

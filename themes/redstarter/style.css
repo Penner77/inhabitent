@@ -409,9 +409,9 @@ table {
 --------------------------------------------------------------*/
 /* Buttons */
 button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
   border: 1px solid;
   border-color: #ccc #ccc #bbb;
   border-radius: 3px;
@@ -422,54 +422,57 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6rem 1rem .4rem;
+  padding: 0.6rem 1rem 0.4rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
+  input[type='button']:hover,
+  input[type='reset']:hover,
+  input[type='submit']:hover {
     border-color: #ccc #bbb #aaa;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
             box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
   button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
+  input[type='button']:active,
+  input[type='button']:focus,
+  input[type='reset']:active,
+  input[type='reset']:focus,
+  input[type='submit']:active,
+  input[type='submit']:focus {
     border-color: #aaa #bbb #bbb;
     -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
             box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
 
 /* Fields */
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'],
 textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
+  input[type='text']:focus,
+  input[type='email']:focus,
+  input[type='url']:focus,
+  input[type='password']:focus,
+  input[type='search']:focus,
   textarea:focus {
     color: #111; }
 
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"] {
+input[type='text'],
+input[type='email'],
+input[type='url'],
+input[type='password'],
+input[type='search'] {
   padding: 3px; }
 
 textarea {
   padding-left: 3px;
   width: 100%; }
+
+input#submit.submit {
+  font-size: 1rem; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -552,6 +555,12 @@ a {
 .home .main-navigation ul {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
+
+.main-navigation {
+  padding-left: 450px; }
+
+.search-submit {
+  display: none; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -815,7 +824,7 @@ object {
   position: absolute; }
 
 .home .site-header .menu-item a {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: white; }
 
 .home .home-hero {
@@ -930,6 +939,14 @@ object {
   height: 30vw;
   padding: 0;
   margin: 0; }
+
+.home .adventure-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .home .canoe {
   grid-column: 1 / span 2;
@@ -1057,6 +1074,9 @@ page-id-9,
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 50px; }
 
@@ -1093,7 +1113,7 @@ page-id-9,
   position: absolute;
   top: 20px;
   left: 20;
-  font-family: 'Novecento Sans Web, sans-serif';
+  font-family: Novecento Bold Sans Web, sans-serif;
   color: white; }
 
 .blog .entry-title a {
@@ -1101,7 +1121,7 @@ page-id-9,
 
 .blog .entry-header,
 .blog .entry-title {
-  background-color: green;
+  background-color: #248a83;
   color: white; }
 
 .blog .menu .menu-item {
@@ -1111,10 +1131,10 @@ page-id-9,
   position: absolute;
   right: 0;
   bottom: 0;
-  background-color: green;
+  background-color: #248a83;
   color: white;
   font-size: 1rem;
-  font-family: 'Novecento Sans Web, sans-serif'; }
+  font-family: Novecento Bold Sans Web, sans-serif; }
 
 .blog .entry-content p {
   max-width: 750px; }
@@ -1133,12 +1153,29 @@ page-id-9,
 /*--------------------------------------------------------------
 # Find Us
 --------------------------------------------------------------*/
-.single-post {
-  background: red; }
-  .single-post .entry-title {
-    position: absolute;
-    background: #248a83 !important;
-    color: white; }
+.single-post img .post-type-post {
+  position: relative;
+  width: 750px; }
+
+.single-post .entry-title {
+  position: absolute;
+  background: #248a83 !important;
+  color: white; }
+
+.single-post .entry-meta {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  background-color: #248a83;
+  color: white;
+  font-size: 1rem;
+  font-family: Novecento Bold Sans Web, sans-serif; }
+
+.single-post .comments-link a {
+  color: white; }
 
 .hero-image-header {
   height: 100vh;
@@ -1174,7 +1211,16 @@ page-id-9,
           align-items: center; }
 
 .page-about .site-header {
-  position: absolute; }
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.page-about .site-header ul li a {
+  color: white; }
 
 .single-product .product-group article {
   display: -webkit-box;
@@ -1241,7 +1287,8 @@ page-id-9,
   width: 1200px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 300px);
-  margin: 0 auto; }
+  margin: 0 auto;
+  grid-gap: 10px; }
 
 .post-type-archive .product-grid-items,
 .post-type-archive-product .product-grid-items {
@@ -1258,7 +1305,20 @@ page-id-9,
   display: flex;
   font-size: 1rem;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  border: 1px solid #000;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px; }
+
+.post-type-archive .dots,
+.post-type-archive-product .dots {
+  position: relative;
+  top: 5px; }
 
 .post-type-archive .entry-header,
 .post-type-archive-product .entry-header {
@@ -1266,8 +1326,10 @@ page-id-9,
 
 .post-type-archive .entry-title,
 .post-type-archive-product .entry-title {
-  position: relative;
-  font-size: 1rem; }
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  position: static; }
 
 .post-type-archive .thumbnail-post-link,
 .post-type-archive-product .thumbnail-post-link {
@@ -1319,27 +1381,38 @@ page-id-9,
   display: grid;
   width: 1200px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 300px); }
+  grid-template-rows: repeat(1, 300px);
+  margin: 0 auto; }
 
-.tax-product-type .four-cat-title {
+.tax-product-type .entry-content {
+  padding-left: 5px;
+  color: black; }
+
+.tax-product-type .product-grid-item-name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  color: #000;
-  margin: 0 auto;
-  width: 250px;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #000;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  height: 50px; }
 
-.tax-product-type .four-cat-price {
-  vertical-align: bottom; }
+.tax-product-type .dots {
+  position: relative;
+  top: 5px; }
 
-.tax-product-type .entry-content {
-  padding-left: 5px;
-  color: black; }
+.tax-product-type .entry-header {
+  display: grid; }
+
+.tax-product-type .entry-title {
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  position: static; }

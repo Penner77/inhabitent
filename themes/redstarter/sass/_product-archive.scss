@@ -27,6 +27,7 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 300px);
     margin: 0 auto;
+    grid-gap: 10px;
   }
 
   .product-grid-items {
@@ -40,6 +41,15 @@
     font-size: 1rem;
     margin: 0;
     padding: 0;
+    border: 1px solid #000;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;
+  }
+
+  .dots {
+    position: relative;
+    top: 5px;
   }
 
   .entry-header {
@@ -47,8 +57,11 @@
   }
 
   .entry-title {
-    position: relative;
+    // position: relative;
     font-size: 1rem;
+    margin: 0;
+    padding: 0;
+    position: static;
   }
 
   .thumbnail-post-link {

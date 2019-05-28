@@ -23,5 +23,11 @@
 
   .site-header {
     position: absolute;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .site-header ul li a {
+    color: white;
   }
 }

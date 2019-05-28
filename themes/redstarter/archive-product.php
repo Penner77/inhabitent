@@ -64,14 +64,15 @@ get_header(); ?>
 					<?php endif; ?>
 					<div class="product-grid-item-name">
 						<?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
-					</div>
-					<div class="product-grid-item-price">
-						<?php if ('post' === get_post_type()) : ?>
 
+						<p><span class="dots">...............</span></p>
+
+						<p>
 							<?php echo CFS()->get('product_price'); ?>
+						</p>
 
-						</div><!-- .entry-price -->
-					<?php endif; ?>
+					</div>
+
 				</header><!-- .entry-header -->
 
 			</article><!-- #post-## -->

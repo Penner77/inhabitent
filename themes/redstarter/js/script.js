@@ -1,16 +1,13 @@
 (function($) {
-  $(function() {
-    console.log('Hello Jim');
+  $('.icon-search').on('click', function(event) {
+    event.preventDefault();
+    $('.search-field')
+      .toggle('slow')
+      .focus();
   });
 
-  $('.search-field').hide();
-
-  $('.icon-search').click(function() {
-    $('.search-field').show();
-    $('.search-field').focus();
-  });
-
-  $('.search-field').blur(function() {
+  $('.search-field').on('blur', function(event) {
+    event.preventDefault();
     $('.search-field').hide();
   });
 })(jQuery);

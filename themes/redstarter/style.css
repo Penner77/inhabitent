@@ -556,7 +556,8 @@ a {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap; }
 
-.search-submit {
+.search-submit,
+.search-field {
   display: none; }
 
 .header-search .menu-toggle {

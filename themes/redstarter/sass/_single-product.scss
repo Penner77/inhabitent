@@ -1,5 +1,13 @@
 // SINGLE PRODUCT POSTS
 
+.archive {
+  .site-header .menu-item a {
+    font-size: 1rem;
+    color: #248a83;
+    text-transform: uppercase;
+  }
+}
+
 .single-product {
   .product-group article {
     display: flex;

@@ -16,14 +16,17 @@ get_header();
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 				<div class="about-entry-content">
+
 					<?php the_content(); ?>
+
 				</div><!-- .about-entry-content -->
 			</article><!-- #post-## -->
 
 		<?php endwhile;
 	?>
-
-	</main><!-- #main -->
+</div>
+<!--end of max-site-width-1120px-->
+</main><!-- #main -->
 </div><!-- #primary -->
 
 

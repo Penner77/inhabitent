@@ -1,40 +1,47 @@
-
-
 .business-hours {
-    text-transform: uppercase;
-    color: #d99054;
-};
+  text-transform: uppercase;
+  color: #d99054;
+}
 
 .day-of-week {
-    font-weight: 700;
-};
+  font-weight: 700;
+}
 
 .footer {
-    background-image: url(../../images/dark-wood.png);
-    background-repeat: repeat;
-    height: 250px;
-};
+  display: flex;
+  background-image: url(../../images/dark-wood.png);
+  background-repeat: repeat;
+  height: 250px;
+}
 
-.footer-info1, .footer-info2{
-    color:white;
-    flex: 1;
-};
+.footer-info1,
+.footer-info2 {
+  color: white;
+  flex: 1;
+  margin-left: 100px;
+  width: 250px;
+}
 
 .footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left:10px;
-    margin-right:10px;
-};
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.email-icon,
+.phone-icon {
+  display: inline-flex;
+  .fas,
+  .far {
+    padding-right: 10px;
+  }
+}
 
 .logo-right {
-    display:flex;
-    flex: 1;
-    justify-content: flex-end;
-    padding-right: 10px;
-};
-
-.logo-size {
-    width: 200px;
-};
+  width: 250px;
+  margin-top: 20px;
+  position: relative;
+  right: -200px;
+}

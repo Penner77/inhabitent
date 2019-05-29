@@ -13,8 +13,4 @@
   $('.search-field').blur(function() {
     $('.search-field').hide();
   });
-
-  //do a function for the search box here using toggle and hide, using event listener
 })(jQuery);
-
-//the above maps $ as the jquery shortcut as normal but needs to be done for Wordpress

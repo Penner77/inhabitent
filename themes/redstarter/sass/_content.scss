@@ -9,19 +9,15 @@ p {
 
 h1,
 h2,
-a,
+a {
+  font-family: 'Novecento Sans Web', sans-serif;
+}
+
 h3 {
-  font-family: 'Novecento Bold Sans Web', sans-serif;
+  font-family: 'Merriweather Normal Web';
 }
 
 /* Posts and pages */
-
-//SPECIFY WHAT PAGES YOU WANT THIS ON
-
-* {
-  box-sizing: border-box;
-  border: 0.5px dashed rgb(29, 24, 24);
-}
 
 .sticky {
   display: block;
@@ -79,4 +75,8 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.widget-title .day-of-week {
+  font-weight: 700;
 }

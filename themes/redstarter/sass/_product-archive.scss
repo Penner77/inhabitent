@@ -1,11 +1,29 @@
 // 16 item page SHOP:
 
+.archive .site-content,
+.site-header {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.archive .site-header {
+  border-bottom: 1px solid #a1a1a1;
+}
+
 .post-type-archive,
 .post-type-archive-product {
+  .site-header .menu-item a {
+    font-size: 1rem;
+    color: #248a83;
+    text-transform: uppercase;
+  }
+
   .product-top-menu {
     display: flex;
     justify-content: center;
     padding-bottom: 25px;
+    border-bottom: 1px dotted #a1a1a1;
+    margin-bottom: 50px;
   }
 
   .page-header {
@@ -19,21 +37,23 @@
 
   .page-header h2 {
     text-align: center;
+    text-transform: uppercase;
+  }
+
+  .product-block-term {
+    text-transform: uppercase;
   }
 
   .product-archive-container {
     display: grid;
-    width: 1200px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 300px);
-    margin: 0 auto;
+    grid-template-rows: repeat(4, 250px);
     grid-gap: 10px;
   }
 
   .product-grid-items {
     display: flex;
     height: auto;
-    width: 300px;
   }
 
   .product-grid-item-name {

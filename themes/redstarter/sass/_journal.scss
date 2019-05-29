@@ -10,8 +10,9 @@
     max-width: 750px;
   }
 
-  img {
+  .entry-header img {
     width: 100%;
+    margin-left: 50px;
   }
 
   .site-header {
@@ -21,6 +22,7 @@
     align-items: center;
     width: 100%;
     height: 50px;
+    border-bottom: 1px solid #a1a1a1;
   }
 
   .entry-header {
@@ -43,7 +45,8 @@
 
 /*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
 
-.blog {
+.blog,
+.single-post {
   img .post-type-post {
     position: relative;
     width: 750px;
@@ -65,11 +68,13 @@
 
   .entry-title a {
     color: white;
+    background-color: #248a83;
+    margin-left: 50px;
   }
 
   .entry-header,
   .entry-title {
-    background-color: #248a83;
+    // background-color: #248a83;
     color: white;
   }
 
@@ -101,5 +106,16 @@
     $color__link: rgb(245, 248, 248);
     $color__link-visited: rgb(255, 255, 255);
     $color__link-hover: #a3afae;
+  }
+}
+
+.blog,
+.single-post,
+.page-find-us,
+.single-product {
+  .site-header .menu-item a {
+    font-size: 1rem;
+    color: #248a83;
+    text-transform: uppercase;
   }
 }

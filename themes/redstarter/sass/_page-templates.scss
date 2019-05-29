@@ -2,36 +2,40 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.site-branding {
+  width: 250px;
+}
+
+.site-content {
+  display: block;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.site-header .menu-item a {
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+}
+
 //  START FRONT PAGE  *******************
 .home {
+  .site-header {
+    position: absolute;
+  }
   .entry-title {
     display: none;
   }
 
-  .site-branding {
-    width: 250px;
-  }
-
-  .site-content {
-    display: block;
-  }
-
-  .site-header {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    position: absolute;
-  }
-
-  .site-header .menu-item a {
-    font-size: 1rem;
-    color: white;
-  }
-
   .home-hero {
-    background-image: url(../../images/home-hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../images/home-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -41,7 +45,9 @@
   }
 
   .menu-main-menu-container {
-    padding-left: 200px;
+    padding-left: 50px;
+    padding-right: 150px;
+    display: inline-block;
   }
 
   .shop-stuff-container {
@@ -49,6 +55,27 @@
     margin-right: auto;
     width: 1120px;
     text-align: center;
+  }
+
+  h2 {
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .stuff-button {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #248a83;
+  }
+
+  .stuff-button a {
+    color: #fff;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-transform: uppercase;
   }
 
   .shop-stuff-blocks {
@@ -62,18 +89,13 @@
   .product-block-term {
     border: 1px solid #e1e1e1;
     border-top: 5px solid #e1e1e1;
-    flex: 0 1 24%;
-    max-width: 24%;
-    padding: 0.75rem;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .block-img {
     height: 70px;
-    widows: 70px;
-  }
-
-  .front-page-journal h2 {
-    text-align: center;
+    margin-top: 10px;
   }
 
   .journals-container {
@@ -101,10 +123,24 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid #a1a1a1;
   }
 
   .journals-container li img {
     height: 275px;
+  }
+
+  .journal-title h4 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.75px;
+    font-family: Novecento Sans Web, sans-serif;
   }
 
   a.read-more-button {
@@ -112,8 +148,13 @@
     justify-content: flex-start;
     width: 150px;
     padding-left: 30px;
-    background-color: #248a83;
-    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-left: 10px;
+    margin-bottom: 10px;
   }
 
   //start of Adventure Grid
@@ -124,9 +165,19 @@
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 2fr;
     grid-gap: 20px 20px;
-    height: 30vw;
+    height: 550px;
     padding: 0;
     margin: 0;
+  }
+
+  .adventure-buttons {
+    font-family: 'Novecento Sans Web', sans-serif;
+    width: 120px;
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    border: 1px solid white;
+    margin-left: 10px;
   }
 
   .adventure-grid {
@@ -134,75 +185,52 @@
     justify-content: center;
   }
 
+  .latest-adventures h2 {
+    text-align: center;
+    font-weight: normal;
+  }
+
   .canoe {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
-    background-image: url(../../images/adventure-photos/canoe-girl.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../images/adventure-photos/canoe-girl.jpg);
     background-size: cover;
   }
 
   .beach {
     grid-column: 3 / span 2;
     grid-row: 1 / span 1;
-    background-image: url(../../images/adventure-photos/beach-bonfire.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../images/adventure-photos/beach-bonfire.jpg);
     background-size: cover;
     background-position: 50%;
   }
 
   .mountain {
-    background-image: url(../../images/adventure-photos/mountain-hikers.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../images/adventure-photos/mountain-hikers.jpg);
     background-size: cover;
   }
 
   .sky {
-    background-image: url(../../images/adventure-photos/night-sky.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url(../../images/adventure-photos/night-sky.jpg);
     background-size: cover;
   }
 
   .adventure-grid-ul li h3 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: white;
+  }
+
+  .fp-post-meta {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 0.75rem;
   }
 
   // END OF ADVENTURE GRID
 }
 
 //  END FRONT PAGE  *******************
-
-// FOR FIND US PAGE.PHP
-
-.page-find-us {
-  .hfeed-site {
-    display: flex;
-  }
-  .site-content {
-    display: flex;
-  }
-
-  .content-area {
-    width: 175%;
-  }
-
-  .widget-area {
-    width: 25%;
-  }
-}
-
-.page-id-9 {
-  .entry-title {
-    display: none;
-  }
-
-  .site-content {
-    position: relative;
-  }
-}
-
-page-id-9,
-.site-header {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  width: 100%;
-  max-height: 50px;
-}

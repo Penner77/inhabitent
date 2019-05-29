@@ -1,3 +1,13 @@
+.entry-header-hero-image-header {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(//localhost:3000/inhabitent/wp-content/uploads/2019/05/about-hero.jpg)
+      no-repeat center bottom;
+  background-size: cover, cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero-image-header {
   height: 100vh;
   display: flex;
@@ -29,5 +39,15 @@
 
   .site-header ul li a {
     color: white;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    max-width: 900px;
+    margin: 0 auto;
   }
 }

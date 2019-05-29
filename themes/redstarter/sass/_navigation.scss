@@ -73,8 +73,10 @@ ul {
 li {
   float: left;
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
+  min-width: 80px;
+  text-align: center;
 
   &:hover > a,
   &.focus > a {
@@ -129,10 +131,10 @@ a {
   flex-wrap: nowrap;
 }
 
-.main-navigation {
-  padding-left: 450px;
-}
-
 .search-submit {
   display: none;
+}
+
+.header-search .menu-toggle {
+  color: white;
 }

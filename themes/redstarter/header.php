@@ -27,7 +27,7 @@
 
 		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
-				<a href="<?php echo get_home_url(); ?>"><img class=“banner-tent” src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' ?>">
+				<a href="<?php echo get_home_url(); ?>"><img alt="tent-image-banner" class=“banner-tent” src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' ?>">
 				</a>
 			</div><!-- .site-branding -->
 

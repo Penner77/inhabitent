@@ -34,7 +34,7 @@
 
 
 		<div class="logo-right">
-			<img class=“logo-size” src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg' ?>"></a>
+			<a href="<?php echo get_home_url(); ?>"><img class=“logo-size” src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-text.svg' ?>"></a>
 		</div>
 
 	</div>

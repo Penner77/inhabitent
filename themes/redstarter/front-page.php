@@ -11,7 +11,7 @@ get_header(); ?>
     <main id="main" class="site-main" role="main">
         <div class="home-hero">
             <div class=“logo-full”>
-                <a href="<?php echo get_home_url(); ?>"> <img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>"></a>
+                <a href="<?php echo get_home_url(); ?>"> <img alt="mainlogo" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-full.svg' ?>"></a>
 
             </div>
         </div>
@@ -36,10 +36,10 @@ get_header(); ?>
             foreach ($terms as $term) : ?>
 
                 <div class="product-block-term">
-                    <img class="block-img" src="<?php echo get_template_directory_uri() .
-                                                    '/images/product-type-icons/' .
-                                                    $term->slug .
-                                                    '.svg' ?>" />
+                    <img alt="image-icon" class="block-img" src="<?php echo get_template_directory_uri() .
+                                                                        '/images/product-type-icons/' .
+                                                                        $term->slug .
+                                                                        '.svg' ?>" />
                     <p><?php echo $term->description; ?></p>
                     <p class="stuff-button">
                         <a href="<?php echo get_term_link($term); ?>">
@@ -85,7 +85,8 @@ get_header(); ?>
                     <div class="journal-title">
                         <a href="<?php get_the_permalink(); ?> ">
                             <h4><?php the_title(); ?></h4>
-                            <a class="read-more-button" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
+                        </a>
+                        <a class="read-more-button" href="<?php echo get_the_permalink(); ?>">Read Entry</a>
                     </div>
                 </li>
 
@@ -131,7 +132,8 @@ get_header(); ?>
 <!--end of max-site-width-1120px-->
 
 </main><!-- #main -->
-<!-- </div>#primary -->
+</div>
+<!--#primary-->
 
 
 <?php get_footer(); ?>

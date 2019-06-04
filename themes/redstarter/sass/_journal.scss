@@ -5,7 +5,8 @@
 // START OF JOURNAL PAGE *********************
 
 .blog,
-.single-post {
+.single-post,
+.date {
   .content-area p {
     max-width: 750px;
   }
@@ -46,7 +47,8 @@
 /*TEXT OVERLAY ON THE JOURNAL ARCHIVE PAGE IMAGES*/
 
 .blog,
-.single-post {
+.single-post,
+.date {
   img .post-type-post {
     position: relative;
     width: 750px;

@@ -29,7 +29,7 @@ get_header(); ?>
 							<?php
 							foreach ($terms as $term) : ?>
 
-								<div class="product-block-term">
+								<div class="product-block-terms">
 									<a href="<?php echo get_term_link($term); ?>">
 										<?php echo $term->name; ?>
 									</a>
@@ -63,7 +63,7 @@ get_header(); ?>
 						<a class="thumbnail-post-link" href="<?php echo get_permalink(); ?>"> <?php the_post_thumbnail('large'); ?></a>
 					<?php endif; ?>
 					<div class="product-grid-item-name">
-						<?php the_title(sprintf('<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url(get_permalink())), '</a></h2>'); ?>
+						<?php the_title(); ?>
 
 						<p><span class="dots">...............</span></p>
 

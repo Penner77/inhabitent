@@ -15,43 +15,43 @@ get_header(); ?>
 
             </div>
         </div>
-</div>
-<!-- start of SHOP STUFF -->
+        <!-- </div> -->
+        <!-- start of SHOP STUFF -->
 
-<div class="site-max-width">
+        <div class="site-max-width">
 
-    <div class="shop-stuff-container">
-        <h2>Shop Stuff</h2>
+            <div class="shop-stuff-container">
+                <h2>Shop Stuff</h2>
 
-        <div class="shop-stuff-blocks">
-            <?php $terms = get_terms(
-                array(
-                    'taxonomy' => 'product-type',
-                    'hide_empty' => 0
-                )
-            ); ?>
+                <div class="shop-stuff-blocks">
+                    <?php $terms = get_terms(
+                        array(
+                            'taxonomy' => 'product-type',
+                            'hide_empty' => 0
+                        )
+                    ); ?>
 
-            <!-- <div class="product-blocks-terms"> -->
-            <?php
-            foreach ($terms as $term) : ?>
+                    <!-- <div class="product-blocks-terms"> -->
+                    <?php
+                    foreach ($terms as $term) : ?>
 
-                <div class="product-block-term">
-                    <img alt="image-icon" class="block-img" src="<?php echo get_template_directory_uri() .
-                                                                        '/images/product-type-icons/' .
-                                                                        $term->slug .
-                                                                        '.svg' ?>" />
-                    <p><?php echo $term->description; ?></p>
-                    <p class="stuff-button">
-                        <a href="<?php echo get_term_link($term); ?>">
-                            <?php echo $term->name; ?> Stuff
-                        </a>
-                    </p>
+                        <div class="product-block-term">
+                            <img alt="image-icon" class="block-img" src="<?php echo get_template_directory_uri() .
+                                                                                '/images/product-type-icons/' .
+                                                                                $term->slug .
+                                                                                '.svg' ?>" />
+                            <p><?php echo $term->description; ?></p>
+                            <p class="stuff-button">
+                                <a href="<?php echo get_term_link($term); ?>">
+                                    <?php echo $term->name; ?> Stuff
+                                </a>
+                            </p>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
-            <?php endforeach; ?>
+                <!-- end of .product_terms -->
+            </div>
         </div>
-        <!-- end of .product_terms -->
-    </div>
-</div>
 </div>
 <!-- div end of SHOP STUFF -->
 
@@ -122,12 +122,9 @@ get_header(); ?>
     </div>
 </div>
 
-<?php while (have_posts()) : the_post(); ?>
-
-    <?php get_template_part('template-parts/content', 'page'); ?>
-
-<?php endwhile;
-?>
+<div class="more-adventures-button">
+    More Aventures
+</div>
 </div>
 <!--end of max-site-width-1120px-->
 

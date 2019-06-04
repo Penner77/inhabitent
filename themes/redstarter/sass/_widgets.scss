@@ -17,8 +17,8 @@
 }
 
 .widget-area {
-  padding: 3rem;
-  flex-basis: 30%;
+  padding: 1rem;
+  flex-basis: 20%;
   h2 {
     @include font-size(1.5);
     margin-bottom: 1.5rem;
@@ -44,7 +44,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin-left: 75px;
+  margin-left: 50px;
 
   ul {
     display: inline-flex;
@@ -60,10 +60,12 @@
     font-family: Novecento Sans Web, sans-serif;
   }
 
-  .widget-address {
+  .widget-address,
+  p #text {
     color: black;
     font-family: Merriweather Normal Web, serif;
     font-weight: normal;
+    text-transform: capitalize;
   }
 
   .widget-phone-number,
@@ -71,5 +73,10 @@
     color: #248a83;
     font-family: Merriweather Normal Web, serif;
     font-weight: normal;
+    text-transform: lowercase;
+  }
+
+  .widget a {
+    color: #248a83;
   }
 }

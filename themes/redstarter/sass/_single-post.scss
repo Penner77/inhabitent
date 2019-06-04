@@ -13,7 +13,6 @@
 
   .entry-meta {
     position: absolute;
-    display: flex;
     right: 0;
     bottom: 0;
     background-color: #248a83;
@@ -21,8 +20,69 @@
     font-size: 1rem;
     font-family: Novecento Bold Sans Web, sans-serif;
   }
+}
 
+.single-post {
   .comments-link a {
     color: white;
+  }
+
+  .comment-respond,
+  .entry-footer {
+    font-size: 1rem;
+    font-family: Novecento Bold Sans Web, sans-serif;
+    text-transform: uppercase;
+    margin-left: 50px;
+  }
+  h3 {
+    font-family: Novecento Bold Sans Web, sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+
+  .entry-footer a,
+  span {
+    margin: 5px;
+  }
+
+  .comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 750px;
+  }
+  .comment-form p,
+  label {
+    font-family: Novecento Bold Sans Web, sans-serif;
+    text-transform: uppercase;
+  }
+
+  textarea {
+    width: 750px;
+  }
+  .comment-form-email,
+  .comment-form-author {
+    flex: 1;
+  }
+  textarea,
+  #email,
+  #author,
+  #url {
+    background-color: #d5d5d5;
+  }
+
+  .submit {
+    background-color: #248a83;
+    color: white;
+    font-size: 1rem;
+    font-family: Novecento Bold Sans Web, sans-serif;
+    border-color: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .submit:hover {
+    border-color: none;
+    box-shadow: none;
+    background-color: #207670;
+    text-shadow: none;
   }
 }

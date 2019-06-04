@@ -19,6 +19,7 @@
   .entry-title {
     position: unset;
     color: white;
+    text-transform: uppercase;
   }
 
   .about-entry-content {
@@ -41,9 +42,13 @@
     color: white;
   }
 
-  h1,
-  h2 {
+  .page-about h1,
+  h2,
+  h3 {
     text-align: center;
+    font-family: 'Novecento Sans Web', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
   }
 
   p {

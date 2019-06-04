@@ -1434,7 +1434,8 @@ a.read-more-button:hover {
 
 .page-about .entry-title {
   position: unset;
-  color: white; }
+  color: white;
+  text-transform: uppercase; }
 
 .page-about .about-entry-content {
   display: -webkit-box;
@@ -1465,9 +1466,13 @@ a.read-more-button:hover {
 .page-about .site-header ul li a {
   color: white; }
 
-.page-about h1,
-.page-about h2 {
-  text-align: center; }
+.page-about .page-about h1,
+.page-about h2,
+.page-about h3 {
+  text-align: center;
+  font-family: 'Novecento Sans Web', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase; }
 
 .page-about p {
   max-width: 900px;

@@ -579,7 +579,9 @@ a {
 .blog .icon-search .fa,
 .single .icon-search .fa,
 .archive .icon-search .fa,
-.page-find-us .icon-search .fa {
+.page-find-us .icon-search .fa,
+.search-results .icon-search .fa,
+.error404 .icon-search .fa {
   color: #222; }
 
 /*--------------------------------------------------------------
@@ -656,10 +658,11 @@ a {
 .widget-area {
   padding: 1rem;
   -ms-flex-preferred-size: 20%;
-      flex-basis: 20%; }
+      flex-basis: 20%;
+  border-left: 0.5px solid #b8b7b7; }
   .widget-area h2 {
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 1.5rem; }
   .widget-area ul {
     margin: 0;
@@ -697,22 +700,31 @@ a {
       text-align: left; }
   .widget-area h2.widget-title {
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: Novecento Sans Web, sans-serif; }
   .widget-area .widget-address,
   .widget-area p #text {
     color: black;
     font-family: Merriweather Normal Web, serif;
     font-weight: normal;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-size: 0.9rem; }
   .widget-area .widget-phone-number,
   .widget-area .widget-email a {
     color: #248a83;
     font-family: Merriweather Normal Web, serif;
     font-weight: normal;
     text-transform: lowercase; }
+  .widget-area .widget-phone-number:hover,
+  .widget-area .widget-email a:hover,
+  .widget-area ul li a:hover {
+    color: #1d6964; }
   .widget-area .widget a {
     color: #248a83; }
+  .widget-area .tent-biz-hours-class p {
+    font-size: 0.9rem; }
+    .widget-area .tent-biz-hours-class p .day-of-week {
+      font-weight: 900; }
 
 /*--------------------------------------------------------------
 # Content
@@ -1108,6 +1120,32 @@ a.read-more-button:hover {
 .more-adventures-button:hover {
   background-color: #207973; }
 
+.error-404 h1 {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  padding-left: 50px; }
+
+.error-404 h2 {
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase; }
+
+.error-404 ul li {
+  font-family: Merriweather Web, serif; }
+
+.error-404 .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.error-404 .search-submit,
+.error-404 .search-field {
+  display: block; }
+
+.error-404 .icon-search .fa {
+  color: #000;
+  position: absolute;
+  margin: 10px; }
+
 .business-hours {
   text-transform: uppercase;
   color: #d99054;
@@ -1123,6 +1161,13 @@ a.read-more-button:hover {
   background-image: url(../../images/dark-wood.png);
   background-repeat: repeat;
   height: 250px; }
+
+.footer-copyright {
+  background-image: url(../../images/dark-wood.png);
+  background-repeat: repeat;
+  text-align: center;
+  color: white;
+  padding-bottom: 25px; }
 
 .footer-info1,
 .footer-info2 {
@@ -1167,6 +1212,11 @@ a.read-more-button:hover {
 /*--------------------------------------------------------------
 # Journal / Home 
 --------------------------------------------------------------*/
+.blog .content-area,
+.single-post .content-area,
+.date .content-area {
+  padding-top: 25px; }
+
 .blog .content-area p,
 .single-post .content-area p,
 .date .content-area p {
@@ -1244,7 +1294,12 @@ a.read-more-button:hover {
 .date .entry-title a {
   color: white;
   background-color: #248a83;
-  margin-left: 50px; }
+  margin-left: 50px;
+  padding: 10px;
+  font-family: Novecento Bold Sans Web, sans-serif;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .blog .entry-header,
 .blog .entry-title,
@@ -1284,10 +1339,28 @@ a.read-more-button:hover {
 .blog .site-header .menu-item a,
 .single-post .site-header .menu-item a,
 .page-find-us .site-header .menu-item a,
-.single-product .site-header .menu-item a {
+.single-product .site-header .menu-item a,
+.search-results .site-header .menu-item a,
+.error404 .site-header .menu-item a {
   font-size: 1rem;
   color: #248a83;
   text-transform: uppercase; }
+
+.read-more-post {
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+  padding: 10px;
+  margin-left: 25px;
+  width: 150px;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  margin: 10px 10px 50px 50px;
+  border: 1px solid black; }
+
+.read-more-post:hover {
+  background-color: #207973;
+  color: white; }
 
 /*--------------------------------------------------------------
 # Front Page
@@ -1317,11 +1390,32 @@ a.read-more-button:hover {
 .page-find-us .widget-area {
   width: 40%; }
 
-.page-id-9 .entry-title {
-  display: none; }
+.page-find-us .entry-title {
+  position: static; }
 
 .page-id-9 .site-content {
   position: relative; }
+
+.page-id-9 .wpcf7-form .wpcf7-form-control,
+.page-id-9 textarea {
+  background-color: #d5d5d5; }
+
+.page-id-9 .wpcf7-form .wpcf7-submit {
+  background-color: #248a83;
+  color: white;
+  font-size: 1rem;
+  font-family: Novecento Bold Sans Web, sans-serif;
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none; }
+
+.page-id-9 .wpcf7-form .wpcf7-submit:hover {
+  border-color: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: #207670;
+  text-shadow: none; }
 
 .single-post img .post-type-post {
   position: relative;
@@ -1331,7 +1425,10 @@ a.read-more-button:hover {
   position: absolute;
   background: #248a83 !important;
   color: white;
-  margin-left: 50px; }
+  margin-left: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
 
 .single-post .entry-meta {
   position: absolute;
@@ -1458,10 +1555,7 @@ a.read-more-button:hover {
   position: absolute;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+          align-items: center; }
 
 .page-about .site-header ul li a {
   color: white; }
@@ -1488,6 +1582,11 @@ a.read-more-button:hover {
   display: -ms-flexbox;
   display: flex; }
 
+.single-product .price {
+  font-family: Novecento Sans Web, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700; }
+
 .single-product .single-product .hentry .entry-title {
   color: #d99054;
   font-family: Novecento Sans Web, sans-serif;
@@ -1501,7 +1600,9 @@ a.read-more-button:hover {
   padding-left: 25px; }
 
 .single-product .entry-header {
-  padding-left: 25px; }
+  padding-left: 25px;
+  color: #d99054;
+  font-family: Novecento Sans Web, sans-serif; }
 
 .single-product .single-product .product-info {
   padding-top: 40px;
@@ -1521,7 +1622,8 @@ a.read-more-button:hover {
   max-width: 1120px;
   margin: 0 auto; }
 
-.archive .site-header {
+.archive,
+.page-find-us .site-header {
   border-bottom: 1px solid #a1a1a1; }
 
 .post-type-archive .site-header .menu-item a,
@@ -1602,7 +1704,10 @@ a.read-more-button:hover {
     .post-type-archive .product-grid-item-name .entry-title a,
     .post-type-archive-product .product-grid-item-name .entry-title a {
       font-family: Merriweather Web, serif !important;
-      font-weight: 100; }
+      font-weight: 100;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
 
 .post-type-archive .dots,
 .post-type-archive-product .dots {
@@ -1706,3 +1811,20 @@ a.read-more-button:hover {
 
 .tax-product-type .entry-header {
   display: grid; }
+
+.search-results .entry-title {
+  position: static; }
+
+.search-results .page-title {
+  padding-left: 25px; }
+
+.search-results .entry-header {
+  padding-left: 50px; }
+
+.search-results .site-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.search-results .site-main {
+  max-width: 750px; }

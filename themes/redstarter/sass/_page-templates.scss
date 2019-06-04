@@ -272,3 +272,30 @@ a.read-more-button:hover {
 // END OF ADVENTURE GRID
 
 //  END FRONT PAGE  *******************
+
+.error-404 {
+  h1 {
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+    padding-left: 50px;
+  }
+  h2 {
+    font-family: Novecento Sans Web, sans-serif;
+    text-transform: uppercase;
+  }
+  ul li {
+    font-family: Merriweather Web, serif;
+  }
+  .search-form {
+    display: flex;
+  }
+  .search-submit,
+  .search-field {
+    display: block;
+  }
+  .icon-search .fa {
+    color: #000;
+    position: absolute;
+    margin: 10px;
+  }
+}

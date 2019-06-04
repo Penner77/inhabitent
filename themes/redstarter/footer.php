@@ -38,6 +38,10 @@
 		</div>
 
 	</div>
+
+</div>
+<div class="footer-copyright">
+	Copyright &copy; 2019 Inhabitent
 </div>
 
 

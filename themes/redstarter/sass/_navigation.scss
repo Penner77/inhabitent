@@ -134,11 +134,6 @@ a {
   }
 }
 
-// .main-navigation li {
-//   display: flex;
-//   flex-wrap: nowrap;
-//   justify-content: space-evenly;
-// }
 .search-submit,
 .search-field {
   display: none;
@@ -163,7 +158,9 @@ a {
 .blog,
 .single,
 .archive,
-.page-find-us {
+.page-find-us,
+.search-results,
+.error404 {
   .icon-search .fa {
     color: #222;
   }

@@ -33,11 +33,13 @@ get_header(); ?>
                         <div class="product-info">
                             <header class="entry-header">
                                 <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+
                             </header><!-- .entry-header -->
 
                             <div class="entry-content">
+                                <div class="price"> <?php echo CFS()->get('product_price'); ?></div>
                                 <?php the_content(); ?>
-                                <?php echo CFS()->get('product_price'); ?>
+
                             </div><!-- .entry-content -->
                         </div>
                     </article><!-- #post-## -->

@@ -13,6 +13,12 @@
     display: flex;
   }
 
+  .price {
+    font-family: Novecento Sans Web, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
   .single-product .hentry .entry-title {
     color: #d99054;
     font-family: Novecento Sans Web, sans-serif;
@@ -30,6 +36,8 @@
 
   .entry-header {
     padding-left: 25px;
+    color: #d99054;
+    font-family: Novecento Sans Web, sans-serif;
   }
 
   .single-product .product-info {

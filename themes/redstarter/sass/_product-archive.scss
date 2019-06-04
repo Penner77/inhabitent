@@ -5,7 +5,8 @@
   margin: 0 auto;
 }
 
-.archive .site-header {
+.archive,
+.page-find-us .site-header {
   border-bottom: 1px solid #a1a1a1;
 }
 
@@ -73,6 +74,7 @@
       a {
         font-family: Merriweather Web, serif !important;
         font-weight: 100;
+        display: inline-flex;
       }
     }
   }

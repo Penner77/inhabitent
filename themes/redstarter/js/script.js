@@ -1,13 +1,17 @@
 (function($) {
-  $('.icon-search').on('click', function(event) {
-    event.preventDefault();
-    $('.search-field')
-      .toggle('slow')
-      .focus();
-  });
+  const searchField = $('.search-field');
+  $(function() {
+    searchField.on('click', function(event) {
+      event.preventDefault();
+      searchField.toggle('slow').focus();
+    });
 
-  $('.search-field').on('blur', function(event) {
-    event.preventDefault();
-    $('.search-field').hide();
+    searchField.on('blur', function(event) {
+      event.preventDefault();
+      searchField.hide();
+    });
   });
 })(jQuery);
+
+// Since you are using  $('.search-field') more than once try storing the DOM reference
+// in a variable e.g. const searchField =  $('.search-field'); and you can use this e.g. searchField.show(); etc...

@@ -19,14 +19,35 @@
   .widget-area {
     width: 40%;
   }
+
+  .entry-title {
+    position: static;
+  }
 }
 
 .page-id-9 {
-  .entry-title {
-    display: none;
-  }
-
   .site-content {
     position: relative;
+  }
+
+  .wpcf7-form .wpcf7-form-control,
+  textarea {
+    background-color: #d5d5d5;
+  }
+
+  .wpcf7-form .wpcf7-submit {
+    background-color: #248a83;
+    color: white;
+    font-size: 1rem;
+    font-family: Novecento Bold Sans Web, sans-serif;
+    border-color: none;
+    box-shadow: none;
+    text-shadow: none;
+  }
+  .wpcf7-form .wpcf7-submit:hover {
+    border-color: none;
+    box-shadow: none;
+    background-color: #207670;
+    text-shadow: none;
   }
 }

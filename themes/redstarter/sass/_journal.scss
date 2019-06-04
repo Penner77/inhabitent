@@ -7,6 +7,10 @@
 .blog,
 .single-post,
 .date {
+  .content-area {
+    padding-top: 25px;
+  }
+
   .content-area p {
     max-width: 750px;
   }
@@ -72,6 +76,9 @@
     color: white;
     background-color: #248a83;
     margin-left: 50px;
+    padding: 10px;
+    font-family: Novecento Bold Sans Web, sans-serif;
+    display: inline-flex;
   }
 
   .entry-header,
@@ -114,10 +121,30 @@
 .blog,
 .single-post,
 .page-find-us,
-.single-product {
+.single-product,
+.search-results,
+.error404 {
   .site-header .menu-item a {
     font-size: 1rem;
     color: #248a83;
     text-transform: uppercase;
   }
+}
+
+.read-more-post {
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+  padding: 10px;
+  margin-left: 25px;
+  width: 150px;
+  font-family: Novecento Sans Web, sans-serif;
+  text-transform: uppercase;
+  margin: 10px 10px 50px 50px;
+  border: 1px solid black;
+}
+
+.read-more-post:hover {
+  background-color: #207973;
+  color: white;
 }

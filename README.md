@@ -2,9 +2,9 @@
 
 Project at RED Academy creating a multi-page website with a blog and many other features for a theoretical company called Inhabitent. Wordpress is used as a content management system.
 
-<img src="themes/redstarter/images/Inhabitent-screen-front-page.gif" >
+<img src="themes/redstarter/images/inhabitent-main-scroll.gif" >
 
-#Main Goals
+#Main Goals  
 Contain a static homepage, styled appropriately (front-page.php)
 
 Contain a static “About” page that uses the “Inhabitent Blocks” plugin to add a custom hero header block to the page, styled appropriately (custom page template)
@@ -31,5 +31,5 @@ Include a custom widget plugin that allows business hours to easily be edited in
 
 Add a toggle-able search form to the site header where the search input is automatically focused when the form is toggled open, and closed when the input is blurred if it is empty
 
-#What I learned
+#What I learned  
 Although I have experience with the front-end use of Wordpress, this is the first time I have built in the backend of Wordpress It was a challenge to learn all the wordpress-specific functions used for PHP, CSS, and Javascript. This project was extremely challenging but moved faster when working with colleagues and the great staff at RED.

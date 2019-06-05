@@ -15,6 +15,12 @@ get_header(); ?>
 			<?php get_template_part('template-parts/content', 'single'); ?>
 
 
+			<div class="social-buttons-blog">
+				<ul>
+					<li><i class="fab fa-facebook-f"></i> Like</li>
+					<li><i class="fab fa-twitter"></i> Tweet</li>
+					<li><i class="fab fa-pinterest"></i>Pin</li>
+			</div>
 
 			<?php
 			// If comments are open or we have at least one comment, load up the comment template.

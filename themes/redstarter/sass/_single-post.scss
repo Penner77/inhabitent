@@ -28,6 +28,28 @@
     color: white;
   }
 
+  .social-buttons-blog ul {
+    list-style: none;
+    width: 400px;
+  }
+
+  .social-buttons-blog ul li {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid black;
+    text-transform: uppercase;
+    font-family: Novecento Bold Sans Web, sans-serif;
+    padding: 5px;
+    width: 100px;
+    margin: 0 auto;
+  }
+
+  .social-buttons-blog ul li:hover {
+    color: white;
+    background-color: #248a83;
+  }
+
   .comment-respond,
   .entry-footer {
     font-size: 1rem;

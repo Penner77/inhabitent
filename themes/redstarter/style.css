@@ -1167,16 +1167,23 @@ a.read-more-button:hover {
   background-repeat: repeat;
   text-align: center;
   color: white;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .footer-info1,
 .footer-info2 {
   color: white;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
   margin-left: 100px;
   width: 250px; }
+  .footer-info1 .footer-info2,
+  .footer-info2 .footer-info2 {
+    max-width: 300px; }
 
 .footer-container {
   display: -webkit-box;
@@ -1192,11 +1199,21 @@ a.read-more-button:hover {
   margin-left: 10px;
   margin-right: 10px; }
 
+.footer-container .footer-social-icons ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto; }
+  .footer-container .footer-social-icons ul li {
+    margin: 15px 10px 0px 10px; }
+
 .email-icon,
 .phone-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex; }
+  display: inline-flex;
+  height: 25px; }
   .email-icon .fas,
   .email-icon .far,
   .phone-icon .fas,
@@ -1441,6 +1458,31 @@ a.read-more-button:hover {
 
 .single-post .comments-link a {
   color: white; }
+
+.single-post .social-buttons-blog ul {
+  list-style: none;
+  width: 400px; }
+
+.single-post .social-buttons-blog ul li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  text-transform: uppercase;
+  font-family: Novecento Bold Sans Web, sans-serif;
+  padding: 5px;
+  width: 100px;
+  margin: 0 auto; }
+
+.single-post .social-buttons-blog ul li:hover {
+  color: white;
+  background-color: #248a83; }
 
 .single-post .comment-respond,
 .single-post .entry-footer {

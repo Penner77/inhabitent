@@ -21,14 +21,19 @@
   text-align: center;
   color: white;
   padding-bottom: 25px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-info1,
 .footer-info2 {
   color: white;
-  flex: 1;
   margin-left: 100px;
   width: 250px;
+  .footer-info2 {
+    max-width: 300px;
+  }
 }
 
 .footer-container {
@@ -39,9 +44,19 @@
   margin-right: 10px;
 }
 
+.footer-container .footer-social-icons ul {
+  list-style: none;
+  display: flex;
+  margin: 0 auto;
+  li {
+    margin: 15px 10px 0px 10px;
+  }
+}
+
 .email-icon,
 .phone-icon {
   display: inline-flex;
+  height: 25px;
   .fas,
   .far {
     padding-right: 10px;

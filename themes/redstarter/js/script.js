@@ -1,14 +1,14 @@
 (function($) {
-  const searchField = $('.search-field');
   $(function() {
-    searchField.on('click', function(event) {
+    const searchField = $('.search-field');
+    $('.icon-search').on('click', function(event) {
       event.preventDefault();
       searchField.toggle('slow').focus();
     });
 
     searchField.on('blur', function(event) {
       event.preventDefault();
-      searchField.hide();
+      searchField.hide('slow');
     });
   });
 })(jQuery);

@@ -6,8 +6,10 @@
 }
 
 .archive,
-.page-find-us .site-header {
-  border-bottom: 1px solid #a1a1a1;
+.page-find-us {
+  .site-header {
+    border-bottom: 1px solid #a1a1a1;
+  }
 }
 
 .post-type-archive,

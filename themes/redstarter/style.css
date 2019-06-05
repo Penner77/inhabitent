@@ -1664,7 +1664,7 @@ a.read-more-button:hover {
   max-width: 1120px;
   margin: 0 auto; }
 
-.archive,
+.archive .site-header,
 .page-find-us .site-header {
   border-bottom: 1px solid #a1a1a1; }
 
@@ -1870,3 +1870,6 @@ a.read-more-button:hover {
 
 .search-results .site-main {
   max-width: 750px; }
+
+.search-results .site-header {
+  border-bottom: 1px solid #a1a1a1; }

@@ -2,7 +2,7 @@
 
 Project at RED Academy creating a multi-page website with a blog and many other features for a theoretical company called Inhabitent. Wordpress is used as a content management system.
 
-<img src="themes/redstarter/images/Inhabitent-screen-front-page.gif" width="400" text-align="center" >
+<img src="themes/redstarter/images/Inhabitent-screen-front-page.gif" width="800" text-align="center" >
 
 #Main Goals
 Contain a static homepage, styled appropriately (front-page.php)

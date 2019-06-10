@@ -2,6 +2,8 @@
 
 Project at RED Academy creating a multi-page website with a blog and features listed below for (a theoretical company called) "Inhabitent". Wordpress is used as a content management system.
 
+Created using Wordpress Template and manual updates to javascript, jquery, php, html and css.
+
 <img src="themes/redstarter/images/git-adventures-grid.jpg" >
 
 # Main Goals

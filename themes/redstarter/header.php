@@ -30,7 +30,7 @@
 		<div class="site-branding">
 			<a href="<?php echo get_home_url(); ?>">
 				<img alt="tent-image-banner" class="banner-tent logo-white" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' ?>">
-				<img alt="tent-image-banner" class="banner-tent logo-green" src=" <?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ?>">
+
 			</a>
 
 		</div><!-- .site-branding -->

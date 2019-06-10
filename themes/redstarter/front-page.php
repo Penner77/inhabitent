@@ -125,7 +125,7 @@ get_header(); ?>
 <div class="more-adventures-button">
     More Aventures
 </div>
-</div>
+<!-- </div> -->
 <!--end of max-site-width-1120px-->
 
 </main><!-- #main -->

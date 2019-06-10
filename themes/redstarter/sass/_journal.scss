@@ -123,6 +123,7 @@
 .page-find-us,
 .single-product,
 .search-results,
+.search-no-results,
 .error404 {
   .site-header .menu-item a {
     font-size: 1rem;
@@ -131,7 +132,8 @@
   }
 }
 
-.read-more-post {
+.read-more-post,
+.search-read-more-btn {
   background-color: white;
   color: black;
   font-size: 0.9rem;
@@ -144,7 +146,8 @@
   border: 1px solid black;
 }
 
-.read-more-post:hover {
+.read-more-post:hover,
+.search-read-more-btn:hover {
   background-color: #207973;
   color: white;
 }

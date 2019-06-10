@@ -10,5 +10,5 @@
 
 		<span class="screen-reader-text"><?php echo esc_html('Search'); ?></span>
 	</button>
-	<!-- try toggle or focus or blur or hide , jquery/javascript -->
+
 </form>

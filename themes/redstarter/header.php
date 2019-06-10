@@ -28,8 +28,11 @@
 	<!--TEST TO REMOVE WP ADMIN BAR, DONE JUNE 3-->
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<a href="<?php echo get_home_url(); ?>"><img alt="tent-image-banner" class=“banner-tent” src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' ?>">
+			<a href="<?php echo get_home_url(); ?>">
+				<img alt="tent-image-banner" class="banner-tent logo-white" src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg' ?>">
+				<img alt="tent-image-banner" class="banner-tent logo-green" src=" <?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg' ?>">
 			</a>
+
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">

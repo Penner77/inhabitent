@@ -581,6 +581,7 @@ a {
 .archive .icon-search .fa,
 .page-find-us .icon-search .fa,
 .search-results .icon-search .fa,
+.search-no-results .icon-search .fa,
 .error404 .icon-search .fa {
   color: #222; }
 
@@ -687,7 +688,11 @@ a {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  margin-left: 50px; }
+  margin-left: 50px;
+  padding-right: 50px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
   .widget-area ul {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -973,12 +978,10 @@ object {
   max-width: 1200px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
-  max-height: 500px; }
+  display: inline-flex; }
 
 .journals-container li {
   list-style: none;
-  height: 250px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -987,7 +990,6 @@ object {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   margin-left: 10px;
   margin-right: 10px;
   border: 1px solid #a1a1a1; }
@@ -1358,12 +1360,14 @@ a.read-more-button:hover {
 .page-find-us .site-header .menu-item a,
 .single-product .site-header .menu-item a,
 .search-results .site-header .menu-item a,
+.search-no-results .site-header .menu-item a,
 .error404 .site-header .menu-item a {
   font-size: 1rem;
   color: #248a83;
   text-transform: uppercase; }
 
-.read-more-post {
+.read-more-post,
+.search-read-more-btn {
   background-color: white;
   color: black;
   font-size: 0.9rem;
@@ -1375,7 +1379,8 @@ a.read-more-button:hover {
   margin: 10px 10px 50px 50px;
   border: 1px solid black; }
 
-.read-more-post:hover {
+.read-more-post:hover,
+.search-read-more-btn:hover {
   background-color: #207973;
   color: white; }
 
@@ -1866,7 +1871,8 @@ a.read-more-button:hover {
 .search-results .site-content {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  padding-bottom: 25px; }
 
 .search-results .site-main {
   max-width: 750px; }

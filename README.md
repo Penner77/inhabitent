@@ -18,7 +18,7 @@ Project at RED Academy creating a multi-page website with a blog and features li
 
 - Contain a product archive called “Shop” that displays 16 posts per page in ascending order by title, styled appropriately (archive-product.php)
 
-<img src="themes/redstarter/images/git-shop-stuff.gif" >
+<img src="themes/redstarter/images/git-shop-stuff-hovering.gif" >
 
 - Contain a product type archive that displays 16 posts per page in ascending order by title, styled appropriately (taxononomy-product_type.php)
 
